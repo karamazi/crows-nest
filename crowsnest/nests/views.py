@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def index():
+def index(request):
     pass
