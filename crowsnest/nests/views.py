@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-index = None
+def index():
+    pass
