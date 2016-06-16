@@ -14,4 +14,4 @@ class IndexTest(TestCase):
         request = HttpRequest()
         response = index(request)
         self.assertTrue(response.content.startswith(b'<html>'))
-        self.assertTrue(response.content.endwith(b'</html>'))
+        self.assertTrue(response.content.endswith(b'</html>'))
