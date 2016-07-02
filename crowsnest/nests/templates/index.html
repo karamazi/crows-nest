@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Armada - Crow's Nest</title>
+</head>
+<body>
+<ul>
+{% for cluster in clusters %}
+    <li>
+       <a href="{% url 'details' cluster.id %}">{{ cluster.name }}</a>
+    </li>
+{% endfor %}
+
+</ul>
+</body>
+</html>

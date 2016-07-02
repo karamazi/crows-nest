@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ cluster.name }}</title>
+</head>
+<body>
+<h1>{{ cluster.name }} ({{ cluster.address }})</h1>
+{{ cluster.secret_key|yesno:'secured,insecure' }}
+</body>
+</html>
