@@ -18,6 +18,8 @@ from django.contrib import admin
 from nests import views
 
 urlpatterns = [
-    #url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index')
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', views.index, name='index'),
+    url(r'^(?P<cluster_id>[0-9]+)/$', views.cluster_details, name='details'),
+    url(r'^add/$', views.add_cluster, name='add_cluster'),
 ]
